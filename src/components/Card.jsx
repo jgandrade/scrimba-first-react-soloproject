@@ -10,6 +10,5 @@ export default function Card() {
             <CardBody />
             <CardFooter />
         </div>
-
     );
 }

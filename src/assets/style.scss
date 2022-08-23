@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e2024;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 270px;
+    height: 560px;
+    background-color: #17181d;
+    color: whitesmoke;
+    overflow: hidden;
+    font-size: 0.8em;
+    border-radius: 0.5em;
+    padding: 0 1em;
+
+    .card-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+
+        img {
+            width: 300px;
+            height: 35vh;
+            overflow: hidden;
+            object-fit: cover;
+            margin-bottom: 2em;
+        }
+
+        .front {
+            margin-bottom: 0.5em;
+            color: #cf9369;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .profile-buttons > button {
+            width: 7em;
+            border: none;
+            border-radius: 0.5em;
+            padding: 0.5em 0;
+            margin-top: 1em;
+            margin: 1em 0.5em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .linkedIn {
+            color: whitesmoke;
+            background-color: #6195E2;
+        }
+    }
+
+    .card-body{
+        font-size: 0.8em;
+        padding: 0 2em;
+
+        & div{
+            margin: 1em 0;
+            & p{
+                color: rgb(168, 167, 167);
+            }
+        }
+    }
+
+    .card-footer{
+        background-color: #141416;
+        width: 270px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & button{
+            font-size: 0.7em;
+            font-weight: bold;
+            color: whitesmoke;
+            padding: 0.3em 1em;
+            border: none;
+            border-radius: 0.5em;
+            background-color: #28282b;
+            margin: 0 0.2em;
+            cursor: pointer;
+        }
+    }
+}
