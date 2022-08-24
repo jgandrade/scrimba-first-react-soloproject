@@ -13,6 +13,10 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #1e2024;
+
+    #root{
+        display: flex;
+    }
 }
 
 .card {
@@ -28,6 +32,7 @@ body {
     font-size: 0.8em;
     border-radius: 0.5em;
     padding: 0 1em;
+    margin: 0 2em;
 
     .card-profile {
         display: flex;
